@@ -1,0 +1,166 @@
+/* Reset elememts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Set background colour */
+body {
+    background-color:#d6f5d8;
+    max-width: 100%;
+}
+
+/* Style the header, change background colour, font colour and add padding. */
+header {
+    background-color: #d6f5d8;
+    color: rgb(37, 92, 55);
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Add border, margin, and padding to main section */
+main {
+    margin: 0px;
+    border: 2px solid rgb(202, 255, 206);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Style the paragraph tags inside the main section */
+main p {
+    width: 91%;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+main {
+    text-align: center;
+}
+/* this will centre justify the container */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* this will centre justify the container text*/
+.container-text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.container-image img {
+    max-width: 75%;
+    height: auto;
+}
+
+.map-container {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Style the footer with padding, background colour, font colour, and centre text */
+footer {
+    padding: 16px;
+    background-color: azure;
+    color: black;
+    text-align: center;
+}
+
+.socialmedia {
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+i {
+    font-size: 40px;
+}
+
+.fa-square-facebook {
+    color: #1877F2;
+}
+
+.fa-square-instagram {
+    color: #405de6;
+}
+
+/* Style Nav with background colour, padding */
+nav {
+    background-color: antiquewhite;
+    padding: 16px;
+}
+
+/* Style the ul within the nav to flexbox and space the items evenly */
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* style the listitems inside the nav to remove the bullet point */
+nav li {
+    list-style: none;
+}
+
+/* Style the anchor tags inside the nav to remove the underline 
+   and change the font colour to dark grey, and convert to uppercase */
+nav a {
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+    text-transform: uppercase;
+    background-color: antiquewhite;
+}
+
+/* Change the anchor tag colour to red and add an underline
+   when the mouse hovers over */
+nav a:hover {
+    color: rgb(255, 0, 0);
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+/* Gallery Section */
+
+/* Style the gallery class using CSS grid
+   create 3 equal columns, with a gap of 10px,
+   set the width of the class to 1200px and add a margin */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+  
+
+/* style the image class so that we add a border to the images */
+.image {
+    overflow: hidden;
+    border-radius: 20px;
+}
+  
+/* set the images with the class to 100% of the column width */
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
